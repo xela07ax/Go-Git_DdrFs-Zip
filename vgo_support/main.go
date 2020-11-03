@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"github.com/go-git/go-billy/v5"
 	"github.com/go-git/go-billy/v5/memfs"
-	"github.com/go-git/go-git"
-	"github.com/go-git/go-git/storage/memory"
+	"github.com/go-git/go-git/v5"
+	"github.com/go-git/go-git/v5/storage/memory"
 	"io"
 	"log"
 	"os"
@@ -29,7 +29,6 @@ func main() {
 	//Info("git clone https://github.com/go-git/go-billy")
 	storer = memory.NewStorage()
 	fs = memfs.New()
-
 
 	_, err := git.Clone(storer, fs, &git.CloneOptions{
 		URL: "https://github.com/xela07ax/XelaGoDoc",
