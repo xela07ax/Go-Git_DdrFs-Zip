@@ -12,4 +12,4 @@
 
 - При включенном параметре GO111MODULE = on, можно просто выролнить тестовый пример из директории vgo_support  
 
-<img src="Pack/chargerMom.jpg" width="600" />  
+<img src="modGopath.gif" width="600" />  
