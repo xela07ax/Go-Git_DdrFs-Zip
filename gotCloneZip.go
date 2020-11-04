@@ -41,6 +41,7 @@ func CloneToZip(url string, dest string) error  {
 	if err != nil {
 		return err
 	}
+	return nil
 }
 func readFiles(dir string, reader billy.Filesystem, zipWriter *zip.Writer) (err error) {
 	files, err := fs.ReadDir(dir)
