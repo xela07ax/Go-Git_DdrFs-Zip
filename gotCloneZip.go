@@ -30,7 +30,7 @@ func CloneToZip(url string, dest string) error  {
 	fmt.Println("Repository cloned")
 	// ---------
 	// Подготовим зипчик
-	destinationFile, err := os.Create("arch.zip")
+	destinationFile, err := os.Create(dest)
 	if err != nil {
 		return err
 	}
